@@ -126,7 +126,10 @@
     <div class="sublabel" id="otherDoorsH"></div>
     <div class="grid2">
       <div><label class="f" id="dClosetL" for="dCloset"></label><input type="number" id="dCloset" min="0" step="1" value="0"></div>
-      <div><label class="f" id="dFrenchL" for="dFrench"></label><input type="number" id="dFrench" min="0" step="1" value="0"></div>
+      <div><label class="f" id="dFrenchSGL" for="dFrenchSG"></label><input type="number" id="dFrenchSG" min="0" step="1" value="0"></div>
+      <div><label class="f" id="dFrenchSFL" for="dFrenchSF"></label><input type="number" id="dFrenchSF" min="0" step="1" value="0"></div>
+      <div><label class="f" id="dFrenchDGL" for="dFrenchDG"></label><input type="number" id="dFrenchDG" min="0" step="1" value="0"></div>
+      <div><label class="f" id="dFrenchDFL" for="dFrenchDF"></label><input type="number" id="dFrenchDF" min="0" step="1" value="0"></div>
     </div>
   </div>
 
@@ -234,7 +237,7 @@ dSlabStainL:"De tinta a esmalte",dSlabReL:"Re-esmaltar (ya pintada)",
 fullH:"Puerta estándar — hoja + marco (chambrana)",
 dFullStainL:"De tinta a esmalte",dFullReL:"Re-esmaltar (ya pintada)",
 otherDoorsH:"Otras puertas",
-dClosetL:"Closet (plegables / corredizas)",dFrenchL:"Francesas / con vidrio",
+dClosetL:"Closet (plegables / corredizas)",dFrenchSGL:"Francesa sencilla — vidrio con rejilla",dFrenchSFL:"Francesa sencilla — vidrio completo",dFrenchDGL:"Francesa doble — vidrio con rejilla",dFrenchDFL:"Francesa doble — vidrio completo",
 trimH:"📏 Molduras — por pie lineal",
 tBaseL:"Rodapié",tCaseL:"Chambrana (marco de puerta)",
 tCrownL:"Moldura de corona",tChairL:"Barandal de silla",
@@ -251,7 +254,7 @@ ratesH:"💲 Tarifas y ajustes",
 ratesNote:"Toca cualquier tarifa para ajustarla; se guarda en tu teléfono.",
 rSlabStain:"Puerta hoja, tinta→esmalte $",rSlabRe:"Puerta hoja, re-esmalte $",
 rFullStain:"Puerta hoja+marco, tinta→esmalte $",rFullRe:"Puerta hoja+marco, re-esmalte $",
-rCloset:"Puerta de closet $",rFrench:"Puerta francesa/vidrio $",
+rCloset:"Puerta de closet $",rFrenchSG:"Francesa sencilla c/ rejilla $",rFrenchSF:"Francesa sencilla vidrio completo $",rFrenchDG:"Francesa doble c/ rejilla $",rFrenchDF:"Francesa doble vidrio completo $",
 rBase:"Rodapié (por ft) $",rCasing:"Chambrana (por ft) $",
 rCrown:"Corona (por ft) $",rChairRail:"Barandal de silla (por ft) $",
 rShoe:"Shoe (por ft) $",rWainscot:"Wainscot (por ft) $",
@@ -281,7 +284,7 @@ liSlabRe:"Puerta estándar — hoja, re-esmalte ({n})",
 liFullStain:"Puerta estándar — hoja+marco, tinta→esmalte ({n})",
 liFullRe:"Puerta estándar — hoja+marco, re-esmalte ({n})",
 liCloset:"Puertas de closet ({n})",
-liFrench:"Puertas francesas / con vidrio ({n})",
+liFrenchSG:"Francesas sencillas — vidrio con rejilla ({n})",liFrenchSF:"Francesas sencillas — vidrio completo ({n})",liFrenchDG:"Francesas dobles — vidrio con rejilla ({n})",liFrenchDF:"Francesas dobles — vidrio completo ({n})",
 liBase:"Rodapié ({n} ft)",liCasing:"Chambrana ({n} ft)",
 liCrown:"Moldura de corona ({n} ft)",liChairRail:"Barandal de silla ({n} ft)",
 liShoe:"Shoe molding ({n} ft)",liWainscot:"Wainscot ({n} ft)",
@@ -313,7 +316,7 @@ dSlabStainL:"Stain → enamel",dSlabReL:"Re-enamel (already painted)",
 fullH:"Standard door — slab + casing/trim",
 dFullStainL:"Stain → enamel",dFullReL:"Re-enamel (already painted)",
 otherDoorsH:"Other doors",
-dClosetL:"Closet (bifold / sliding)",dFrenchL:"French / glass-insert",
+dClosetL:"Closet (bifold / sliding)",dFrenchSGL:"Single French — glass with grid",dFrenchSFL:"Single French — full glass insert",dFrenchDGL:"Double French — glass with grid",dFrenchDFL:"Double French — full glass insert",
 trimH:"📏 Trim — per linear foot",
 tBaseL:"Baseboard",tCaseL:"Door casing",
 tCrownL:"Crown molding",tChairL:"Chair rail",
@@ -330,7 +333,7 @@ ratesH:"💲 Rates & settings",
 ratesNote:"Tap any rate to adjust it; it's saved on your phone.",
 rSlabStain:"Door slab, stain→enamel $",rSlabRe:"Door slab, re-enamel $",
 rFullStain:"Door slab+trim, stain→enamel $",rFullRe:"Door slab+trim, re-enamel $",
-rCloset:"Closet door $",rFrench:"French/glass door $",
+rCloset:"Closet door $",rFrenchSG:"Single French w/ grid $",rFrenchSF:"Single French full glass $",rFrenchDG:"Double French w/ grid $",rFrenchDF:"Double French full glass $",
 rBase:"Baseboard (per LF) $",rCasing:"Casing (per LF) $",
 rCrown:"Crown (per LF) $",rChairRail:"Chair rail (per LF) $",
 rShoe:"Shoe (per LF) $",rWainscot:"Wainscot (per LF) $",
@@ -360,7 +363,7 @@ liSlabRe:"Standard door — slab, re-enamel ({n})",
 liFullStain:"Standard door — slab+trim, stain→enamel ({n})",
 liFullRe:"Standard door — slab+trim, re-enamel ({n})",
 liCloset:"Closet doors ({n})",
-liFrench:"French / glass-insert doors ({n})",
+liFrenchSG:"Single French — glass with grid ({n})",liFrenchSF:"Single French — full glass insert ({n})",liFrenchDG:"Double French — glass with grid ({n})",liFrenchDF:"Double French — full glass insert ({n})",
 liBase:"Baseboard ({n} LF)",liCasing:"Door casing ({n} LF)",
 liCrown:"Crown molding ({n} LF)",liChairRail:"Chair rail ({n} LF)",
 liShoe:"Shoe molding ({n} LF)",liWainscot:"Wainscot ({n} LF)",
@@ -387,7 +390,7 @@ const fill=(s,o)=>String(s).replace(/\{(\w+)\}/g,(_,k)=>o[k]!==undefined?o[k]:""
 /* ================= Estado ================= */
 const RATE_DEFAULTS={
   rSlabStain:275,rSlabRe:150,rFullStain:350,rFullRe:225,
-  rCloset:100,rFrench:300,
+  rCloset:100,rFrenchSG:350,rFrenchSF:300,rFrenchDG:600,rFrenchDF:500,
   rBase:2.5,rCasing:2.5,rCrown:3.5,rChairRail:2.5,rShoe:1.5,rWainscot:7,
   rWindow:175,
   rHinge:120,rHw:85,rDead:125
@@ -397,7 +400,7 @@ function defaultState(){
   return {
     lang:"es",client:"",address:"",
     dSlabStain:0,dSlabRe:0,dFullStain:0,dFullRe:0,
-    dCloset:0,dFrench:0,
+    dCloset:0,dFrenchSG:0,dFrenchSF:0,dFrenchDG:0,dFrenchDF:0,
     tBase:0,tCase:0,tCrown:0,tChair:0,tShoe:0,tWains:0,
     win:0,
     hinge:false,hw:false,dead:false,
@@ -410,7 +413,7 @@ function normalize(st){
   if(!st||typeof st!=="object") return d;
   const o=Object.assign(d,st);
   o.rates=Object.assign({},RATE_DEFAULTS,st.rates||{});
-  ["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrench",
+  ["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrenchSG","dFrenchSF","dFrenchDG","dFrenchDF",
    "tBase","tCase","tCrown","tChair","tShoe","tWains","win"].forEach(k=>{o[k]=Math.max(0,+o[k]||0);});
   ["hinge","hw","dead"].forEach(k=>{o[k]=!!o[k];});
   o.lang=(o.lang==="en")?"en":"es";
@@ -432,7 +435,7 @@ function calc(){
   const nSlabS=num(state.dSlabStain),nSlabR=num(state.dSlabRe);
   const nFullS=num(state.dFullStain),nFullR=num(state.dFullRe);
   const nStd=nSlabS+nSlabR+nFullS+nFullR;
-  const nCloset=num(state.dCloset),nFrench=num(state.dFrench);
+  const nCloset=num(state.dCloset),nFSG=num(state.dFrenchSG),nFSF=num(state.dFrenchSF),nFDG=num(state.dFrenchDG),nFDF=num(state.dFrenchDF);
   const nWin=num(state.win);
   const lines=[];
   const push=(label,qty,unit,rate,amount)=>{lines.push({label,qty,unit,rate,amount:Math.round(amount*100)/100});};
@@ -442,7 +445,10 @@ function calc(){
   if(nFullS>0)push(fill(t("liFullStain"),{n:nFullS}),nFullS,t("perDoor"),R.rFullStain,nFullS*R.rFullStain);
   if(nFullR>0)push(fill(t("liFullRe"),{n:nFullR}),nFullR,t("perDoor"),R.rFullRe,nFullR*R.rFullRe);
   if(nCloset>0)push(fill(t("liCloset"),{n:nCloset}),nCloset,t("perDoor"),R.rCloset,nCloset*R.rCloset);
-  if(nFrench>0)push(fill(t("liFrench"),{n:nFrench}),nFrench,t("perDoor"),R.rFrench,nFrench*R.rFrench);
+  if(nFSG>0)push(fill(t("liFrenchSG"),{n:nFSG}),nFSG,t("perDoor"),R.rFrenchSG,nFSG*R.rFrenchSG);
+  if(nFSF>0)push(fill(t("liFrenchSF"),{n:nFSF}),nFSF,t("perDoor"),R.rFrenchSF,nFSF*R.rFrenchSF);
+  if(nFDG>0)push(fill(t("liFrenchDG"),{n:nFDG}),nFDG,t("perDoor"),R.rFrenchDG,nFDG*R.rFrenchDG);
+  if(nFDF>0)push(fill(t("liFrenchDF"),{n:nFDF}),nFDF,t("perDoor"),R.rFrenchDF,nFDF*R.rFrenchDF);
   // Molduras por pie lineal
   const trims=[
     [num(state.tBase),"liBase",R.rBase],
@@ -463,7 +469,7 @@ function calc(){
   if(state.hw&&nStd>0)push(fill(t("liHw"),{n:nStd}),nStd,t("perDoor"),R.rHw,nStd*R.rHw);
   if(state.dead&&nStd>0)push(fill(t("liDead"),{n:nStd}),nStd,t("perDoor"),R.rDead,nStd*R.rDead);
   const total=lines.reduce((a,l)=>a+l.amount,0);
-  return {lines,total:Math.round(total*100)/100,nStd,nCloset,nFrench,nWin,trimLF};
+  return {lines,total:Math.round(total*100)/100,nStd,nCloset,nFrench:nFSG+nFSF+nFDG+nFDF,nWin,trimLF};
 }
 function scopeText(c){
   return c.nStd+" "+t("scopeDoors")+" · "+c.trimLF+" "+t("scopeTrim")+" · "+c.nWin+" "+t("scopeWin");
@@ -511,7 +517,7 @@ function buildExtras(){
 /* Rates card (built once) */
 const RATES_DEF=[
   ["rSlabStain"],["rSlabRe"],["rFullStain"],["rFullRe"],
-  ["rCloset"],["rFrench"],
+  ["rCloset"],["rFrenchSG"],["rFrenchSF"],["rFrenchDG"],["rFrenchDF"],
   ["rBase"],["rCasing"],["rCrown"],["rChairRail"],["rShoe"],["rWainscot"],
   ["rWindow"],
   ["rHinge"],["rHw"],["rDead"]
@@ -541,7 +547,7 @@ function applyLang(){
   S("fullH","fullH");
   S("dFullStainL","dFullStainL");S("dFullReL","dFullReL");
   S("otherDoorsH","otherDoorsH");
-  S("dClosetL","dClosetL");S("dFrenchL","dFrenchL");
+  S("dClosetL","dClosetL");S("dFrenchSGL","dFrenchSGL");S("dFrenchSFL","dFrenchSFL");S("dFrenchDGL","dFrenchDGL");S("dFrenchDFL","dFrenchDFL");
   S("trimH","trimH");
   S("tBaseL","tBaseL");S("tCaseL","tCaseL");S("tCrownL","tCrownL");
   S("tChairL","tChairL");S("tShoeL","tShoeL");S("tWainsL","tWainsL");
@@ -572,7 +578,7 @@ function setLang(l){
 function syncInputs(){
   $("clientInput").value=state.client||"";
   $("addrInput").value=state.address||"";
-  const numIds=["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrench",
+  const numIds=["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrenchSG","dFrenchSF","dFrenchDG","dFrenchDF",
                 "tBase","tCase","tCrown","tChair","tShoe","tWains","win"];
   numIds.forEach(id=>{$(id).value=state[id]||0;});
   EXTRAS.forEach(x=>{$("opt_"+x.key).checked=!!state[x.key];});
@@ -583,7 +589,7 @@ function initButtons(){
   $("langEn").addEventListener("click",()=>setLang("en"));
   $("clientInput").addEventListener("input",e=>{state.client=e.target.value;save();});
   $("addrInput").addEventListener("input",e=>{state.address=e.target.value;save();});
-  const numIds=["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrench",
+  const numIds=["dSlabStain","dSlabRe","dFullStain","dFullRe","dCloset","dFrenchSG","dFrenchSF","dFrenchDG","dFrenchDF",
                 "tBase","tCase","tCrown","tChair","tShoe","tWains","win"];
   numIds.forEach(id=>{
     $(id).addEventListener("input",e=>{state[id]=Math.max(0,+e.target.value||0);save();render();});
@@ -740,7 +746,7 @@ function buildHandoff(){
       doors:{
         slabStain:num(state.dSlabStain),slabRe:num(state.dSlabRe),
         fullStain:num(state.dFullStain),fullRe:num(state.dFullRe),
-        closet:num(state.dCloset),french:num(state.dFrench)
+        closet:num(state.dCloset),frenchSG:num(state.dFrenchSG),frenchSF:num(state.dFrenchSF),frenchDG:num(state.dFrenchDG),frenchDF:num(state.dFrenchDF)
       },
       trimLF:{
         baseboard:num(state.tBase),casing:num(state.tCase),crown:num(state.tCrown),
